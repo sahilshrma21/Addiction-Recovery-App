@@ -1,0 +1,23 @@
+.hero {
+  background-image: url('/path-to-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  padding: 10px 30px;
+  font-size: 18px;
+}

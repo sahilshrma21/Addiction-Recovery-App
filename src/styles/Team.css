@@ -1,0 +1,25 @@
+.team {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .team h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .team p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+  }
+  
+  .team img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
