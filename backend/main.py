@@ -6,6 +6,8 @@ from routes.user_route import *
 app = FastAPI(title = "Addiction Recovery",
               docs_url="/api")
 
+origins = ["http://localhost:5173/"]
+
 @app.get("/")
 def read_root():
     return {"message":"Welcome to Addiction Recovery App"}
