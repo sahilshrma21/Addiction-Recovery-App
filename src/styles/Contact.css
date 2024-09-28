@@ -1,45 +1,68 @@
-.contact {
-    background-color: #fff;
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  .contact h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-  }
-  
-  .contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact form label {
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-  
-  .contact form input,
-  .contact form textarea {
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .contact form button {
-    padding: 12px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .contact form button:hover {
-    background-color: #0056b3;
-  }
-  
+.contact-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-page p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.address,
+.phone,
+.email {
+  margin-bottom: 20px;
+}
+
+.address h2,
+.phone h2,
+.email h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.address p,
+.phone p,
+.email p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}

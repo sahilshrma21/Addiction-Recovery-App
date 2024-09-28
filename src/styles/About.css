@@ -1,19 +1,161 @@
-.about {
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 60px 20px;
-  }
-  
-  .about h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    font-size: 18px;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  
+.about-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.core-features {
+  margin-bottom: 40px;
+}
+
+.core-features h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.core-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.core-features li {
+  margin-bottom: 20px;
+}
+
+.core-features h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.core-features p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.how-it-works {
+  margin-bottom: 40px;
+}
+
+.how-it-works h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.how-it-works ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.how-it-works li {
+  margin-bottom: 20px;
+}
+
+.how-it-works h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.how-it-works p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.benefits {
+  margin-bottom: 40px;
+}
+
+.benefits h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits li {
+  margin-bottom: 20px;
+}
+
+.benefits h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.benefits p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.get-started {
+  margin-bottom: 40px;
+}
+
+.get-started h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.get-started p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.get-started button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-started button:hover {
+  background-color: #3e8e41;
+}
+
+.contact-us {
+  margin-bottom: 40px;
+}
+
+.contact-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-us li {
+  margin-bottom: 20px;
+}
+
+.contact-us h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contact-us p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
