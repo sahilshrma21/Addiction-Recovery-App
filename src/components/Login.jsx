@@ -1,8 +1,8 @@
 import {
-    EyeInvisibleOutlined,
-    EyeTwoTone,
-    LockOutlined,
-    MailOutlined,
+  EyeInvisibleOutlined,
+  EyeTwoTone,
+  LockOutlined,
+  MailOutlined,
 } from "@ant-design/icons";
 import { Alert, Box, CircularProgress, Snackbar } from "@mui/material";
 import { Input } from "antd";
@@ -16,7 +16,7 @@ function Login() {
   const [error, setError] = useState("");
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const navigate = useNavigate();
-//   const { setLoginData } = useContext(LoginContext);
+  //   const { setLoginData } = useContext(LoginContext);
 
   useEffect(() => {
     setLoading(false);
@@ -32,66 +32,66 @@ function Login() {
     setInputVal((prevState) => ({ ...prevState, [name]: value }));
   };
 
-//   const loginUser = async (e) => {
-//     e.preventDefault();
+  //   const loginUser = async (e) => {
+  //     e.preventDefault();
 
-//     const { userId, password } = inpval;
+  //     const { userId, password } = inpval;
 
-//     if (userId === "") {
-//       setError("Please Enter Your Id");
-//       return;
-//     } else if (password === "") {
-//       setError("Enter Your Password");
-//       return;
-//     } else if (password.length <= 6) {
-//       setError("Password must be greater than 6 digits");
-//       return;
-//     }
+  //     if (userId === "") {
+  //       setError("Please Enter Your Id");
+  //       return;
+  //     } else if (password === "") {
+  //       setError("Enter Your Password");
+  //       return;
+  //     } else if (password.length <= 6) {
+  //       setError("Password must be greater than 6 digits");
+  //       return;
+  //     }
 
-//     setLoading(true);
+  //     setLoading(true);
 
-//     try {
-//       const response = await fetch("/login", {
-//         method: "POST",
-//         headers: { "Content-Type": "application/json" },
-//         body: JSON.stringify({ userId, password }),
-//       });
+  //     try {
+  //       const response = await fetch("/login", {
+  //         method: "POST",
+  //         headers: { "Content-Type": "application/json" },
+  //         body: JSON.stringify({ userId, password }),
+  //       });
 
-//       if (!response.ok)
-//         throw new Error(`HTTP error! status: ${response.status}`);
+  //       if (!response.ok)
+  //         throw new Error(`HTTP error! status: ${response.status}`);
 
-//       const res = await response.json();
+  //       const res = await response.json();
 
-//       if (res.status === 201) {
-//         const { usersdatatoken } = res.result;
+  //       if (res.status === 201) {
+  //         const { usersdatatoken } = res.result;
 
-//         if (usersdatatoken) {
-//           window.localStorage.setItem("isLoggedIn", true);
-//           window.localStorage.setItem("usersdatatoken", usersdatatoken);
-//           //window.localStorage.setItem("refreshToken", refreshToken);
+  //         if (usersdatatoken) {
+  //           window.localStorage.setItem("isLoggedIn", true);
+  //           window.localStorage.setItem("usersdatatoken", usersdatatoken);
+  //           //window.localStorage.setItem("refreshToken", refreshToken);
 
-//           setLoginData(usersdatatoken);
-//           setOpenSnackbar(true);
-//           setInputVal({ userId: "", password: "" });
-//           navigate("/dashboard");
-//         } else {
-//           throw new Error("Token not provided in response");
-//         }
-//       } else {
-//         throw new Error(res.message || "Login failed");
-//       }
-//     } catch (error) {
-//       setError(error.message);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-const loginUser = async (e) => {
+  //           setLoginData(usersdatatoken);
+  //           setOpenSnackbar(true);
+  //           setInputVal({ userId: "", password: "" });
+  //           navigate("/dashboard");
+  //         } else {
+  //           throw new Error("Token not provided in response");
+  //         }
+  //       } else {
+  //         throw new Error(res.message || "Login failed");
+  //       }
+  //     } catch (error) {
+  //       setError(error.message);
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
+  const loginUser = async (e) => {
     e.preventDefault();
-  
-    const { userId, password } = inpval;
-  
-    if (userId === "") {
+
+    const { email, password } = inpval;
+
+    if (email === "") {
       setError("Please Enter Your Id");
       return;
     } else if (password === "") {
@@ -101,32 +101,32 @@ const loginUser = async (e) => {
       setError("Password must be greater than 6 digits");
       return;
     }
-  
+
     setLoading(true);
-  
+
     try {
-      const response = await fetch("/login", {
+      const response = await fetch("http://127.0.0.1:8000/user/user-login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId, password }),
       });
-  
+
       if (!response.ok)
         throw new Error(`HTTP error! status: ${response.status}`);
-  
+
       const res = await response.json();
-  
+
       if (res.status === 201) {
         const { usersdatatoken } = res.result;
-  
+
         if (usersdatatoken) {
           window.localStorage.setItem("isLoggedIn", true);
           window.localStorage.setItem("usersdatatoken", usersdatatoken);
-  
+
           setLoginData(usersdatatoken);
           setOpenSnackbar(true);
           setInputVal({ userId: "", password: "" });
-          
+
           // Redirect to dashboard after successful login
           navigate("/dashboard");
         } else {
@@ -141,7 +141,6 @@ const loginUser = async (e) => {
       setLoading(false);
     }
   };
-  
 
   return (
     <section className="h-full bg-neutral-200 dark:bg-neutral-700">
