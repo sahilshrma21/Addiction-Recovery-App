@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes.user_route import *
+from routes.user_route import user_router
+from routes.diary_route import diary_router
 
 
 app = FastAPI(title = "Addiction Recovery",
@@ -20,3 +21,4 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(user_router)
+app.include_router(diary_router)

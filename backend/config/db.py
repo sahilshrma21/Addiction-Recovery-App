@@ -7,3 +7,4 @@ client = MongoClient(
 
 db = client.Addiction_Recovery
 user_collection = db["user_collection"]
+#diary_collection = db["diary_collection"]
